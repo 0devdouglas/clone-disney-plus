@@ -23,7 +23,6 @@ function toggleActiveButton () {
 
 }
 
-
 function hiddenAllTabs () {
 
     const tabsContaineer = document.querySelectorAll('[data-tab-id]')

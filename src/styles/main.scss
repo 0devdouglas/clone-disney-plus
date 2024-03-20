@@ -1,5 +1,7 @@
 @use 'hero';
 @use 'variaveis';
+@use 'shows';
+@use 'plans';
 
 @font-face {
     font-family: Avenir;
@@ -29,11 +31,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Avenir', sans-serif;
 }
 
 body {
     background: variaveis.$bg-color;
-    font-family: 'Avenir', sans-serif;
+
 }
 
 .link-text {
@@ -64,4 +67,19 @@ body {
 
 .title--big {
     @include title(44px)
+}
+
+.button { 
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$sec-text-color;
+    background: #6421FF;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
 }
