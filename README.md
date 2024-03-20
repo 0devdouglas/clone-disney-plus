@@ -1,7 +1,7 @@
 # Disney+ Clone 
 
 <p>
-    Projeto visando utilizar todas as ferramentas aprendidas durante o curso da EBAC - Full Stack JAva
+    Projeto visando utilizar todas as ferramentas aprendidas durante o curso da EBAC - Full Stack Java
 </p>
 
 ## Tecnologias utilizadas
