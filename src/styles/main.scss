@@ -5,6 +5,7 @@
 @use 'devices';
 @use 'faq';
 @use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -17,7 +18,6 @@
     src: url('../../assets/fonts/Avenir-Bold.woff2');
     font-weight: 700;
 }
-
 
 @mixin textLine($fontSize: 16px) {
     font-size: $fontSize;
@@ -35,6 +35,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Avenir', sans-serif;
+    list-style: none;
 }
 
 body {
@@ -78,13 +79,39 @@ body {
     height: 60px;
     font-size: 18px;
     color: variaveis.$sec-text-color;
-    background: #6421FF;
+    background: variaveis.$button-color;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$button-color;
+
+    
+    &:hover {
+        background: lighten(variaveis.$button-color, 3%);
+    }
+
+    &--secondary {
+        background: variaveis.$header-button-color;
+        border-color: variaveis.$header-button-color;
+
+        &:hover {
+            background: lighten(variaveis.$header-button-color, 3%);
+        }
+    }
+
+    &--dark {
+        background: rgba(variaveis.$dark-color, 0.8);
+        border-color: variaveis.$sec-text-color;
+
+        &:hover {
+            background: variaveis.$sec-text-color;
+            color: variaveis.$bg-color;
+        }
+    }
 }
 
 .image-text-section {
