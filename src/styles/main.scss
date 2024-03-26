@@ -51,26 +51,50 @@ body {
 
 .text--small {
     @include textLine(12px);
+
+    @media (max-width: 768px) {
+        @include textLine(11px)
+    }
 }
 
 .text {
     @include textLine;
+
+    @media (max-width: 768px) {
+        @include textLine(14px)
+    }
 }
 
 .text--big {
     @include textLine(18px);
+        
+    @media (max-width: 768px) {
+        @include textLine(15px)
+    }
+
 }
 
 .title--small {
     @include title;
+    @media (max-width: 768px) {
+        @include title(22px)
+    }
 }
 
 .title {
-    @include title(40)
+    @include title(40);
+
+    @media (max-width: 768px) {
+        @include title(24px)
+    }
 }
 
 .title--big {
-    @include title(44px)
+    @include title(44px);
+        
+    @media (max-width: 768px) {
+        @include title(26px)
+    }
 }
 
 .button { 
@@ -120,6 +144,11 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+
+    @media (max-width: 768px ) {
+        display: block;
+    }
+
     img {
         max-width: 100%;
     }
@@ -149,6 +178,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px ) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
             
         }
     }
